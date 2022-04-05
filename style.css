@@ -1,0 +1,92 @@
+:root {
+    --ff: "Kumbh Sans";
+
+    --fw-400: 400;
+    --fw-700: 700;
+
+    --fs: 18px; /*(name and stats)*/
+
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --dark-gray: hsl(0, 0%, 59%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    align-items: center;
+    background-color: var(--dark-cyan);
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-position: 1px -340px, 750px 350px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.bg-img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.profile img {
+    border: 5px solid var(--white);
+    border-radius: 50%;
+    left: 35%;
+    margin: 0 auto;
+    position: absolute;
+    top: 25%;
+}
+
+.profile h4 {
+    font-weight: var(--fw-700);
+    margin: 60px 0 0;
+}
+
+.profile h4, .profile p {
+    font-family: var(--ff);
+    text-align: center;
+}
+
+.profile span, .profile p {
+    color: var(--dark-gray);
+}
+
+hr {
+    border-width: 1px 0 0;
+    color: var(--dark-gray);
+    margin: 0;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 0 10px;
+}
+
+.stats h4 {
+    font-weight: var(--fw-700);
+    margin: 20px 0 10px;
+}
+
+.stats h4, .stats p {
+    font-family: var(--ff);
+}
+
+.stats p {
+    color: var(--dark-gray);
+    font-size: 10px;
+    text-align: center;
+}
