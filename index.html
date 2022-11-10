@@ -10,26 +10,26 @@
   <title>Frontend Mentor | Profile card component</title>
 </head>
 <body>
-  <main class="container">
-    <img class="bg-img" src="./images/bg-pattern-card.svg" alt="Card Background Illustration">
-    <section class="profile">
-      <img class="avatar" src="./images/image-victor.jpg" alt="Profile Piture">
-      <h4 class="name">Victor Crest <span>26</span></h4>
-      <p class="city">London</p>
+  <main class="profile-card">
+    <img class="profile-card__bg-img" src="./images/bg-pattern-card.svg" alt="Card Background Illustration">
+    <section class="profile-card__avatar-body">
+      <img class="profile-card__avatar__img" src="./images/image-victor.jpg" alt="Profile Piture">
+      <h4 class="profile-card__avatar__title">Victor Crest <span class="profile-card__avatar__title--light">26</span></h4>
+      <p class="profile-card__avatar__text">London</p>
     </section>    
-    <hr>
-    <section class="stats">
-      <div>
-        <h4>80K</h4>
-        <p>Followers</p>
+    <hr class="profile-card__line">
+    <section class="profile-card__stats">
+      <div class="profile-card__stats__body">
+        <h4 class="profile-card__stats__title">80K</h4>
+        <p class="profile-card__stats__text">Followers</p>
       </div>
-      <div>
-        <h4>803K</h4>
-        <p>Likes</p>
+      <div class="profile-card__stats__body">
+        <h4 class="profile-card__stats__title">803K</h4>
+        <p class="profile-card__stats__text">Likes</p>
       </div>
-      <div>
-        <h4>1.4K</h4>
-        <p> Photos</p>
+      <div class="profile-card__stats__body">
+        <h4 class="profile-card__stats__title">1.4K</h4>
+        <p class="profile-card__stats__text">Photos</p>
       </div>
     </section>
   </main>
